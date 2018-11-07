@@ -1,0 +1,74 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="icon.png">
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!-- includes google jQuery file -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<title>Bavaro Investments</title>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<body id="body" class="backgroundbody">
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a class="link" id="about">About</a>
+		  <a class="link" id="contact">Contact</a>
+		</div>
+		
+		<span style="font-size:36px;cursor:pointer" onclick="openNav()" id="menubtn">&#9776; </span>
+		
+		<div id="mySidenavR" class="sidenavR">
+		  <a href="javascript:void(0)" class="closebtnR" onclick="closeNavR()">&times;</a>
+		  <a href="#">Uranium</a>
+		  <a href="#">SGL Carbon</a>
+		</div>
+		
+		<span style="font-size:36px;cursor:pointer" onclick="openNavR()" id="menubtnR">&#9776; </span>
+		
+		<div class="board" id="board">
+			<div class="card" id="card1">
+			  <h2 class="header">INVESTMENT BLOG</h2>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			</div>
+		
+			<div class="card" id="card2">
+			  <h2 class="header">INVESTMENT BLOG</h2>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			</div>
+			
+			<div class="card" id="card3">
+			  <h2 class="header">INVESTMENT BLOG</h2>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			</div>
+		</div>
+		
+		<!-- The Modal -->
+		<div id="myModalAbout" class="modal">
+		  <!-- The Close Button -->
+		  <span class="closeModal" onclick="closeModal()">&times;</span>	
+		  <h2 class="modalHeader">ABOUT</h2>
+		  <!-- Modal Content (The Image) -->
+		  <!-- <img class="modal-content" id="modalImg"> -->
+		  <!-- Modal Caption (Image Text) -->
+		  <div class="modalDescription">Coming soon..</div>
+		</div>	
+				
+		<!-- The Modal -->
+		<div id="myModalContact" class="modal">
+		  <!-- The Close Button -->
+		  <span class="closeModal" onclick="closeModal()">&times;</span>	
+		  <h2 class="modalHeader">CONTACT</h2>
+		  <!-- Modal Content (The Image) -->
+		  <!-- <img class="modal-content" id="modalImg"> -->
+		  <!-- Modal Caption (Image Text) -->
+		  <div class="modalDescription">BavaroInvestments@gmail.com</div>
+		</div>	
+		
+		<script src="myscripts.js"></script>
+	</body>
+</html>
