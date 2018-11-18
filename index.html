@@ -6,6 +6,9 @@
 		<link rel="stylesheet" href="styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!-- includes google jQuery file -->
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 		<title>Bavaro Investments</title>
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
@@ -13,8 +16,8 @@
 		
 		<div id="mySidenav" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <a class="link" id="about">About</a>
-		  <a class="link" id="contact">Contact</a>
+		  <a class="linkAbout" id="about">About</a>
+		  <a class="linkContact" id="contact">Contact</a>
 		</div>
 		
 		<span style="font-size:36px;cursor:pointer" onclick="openNav()" id="menubtn">&#9776; </span>
@@ -29,9 +32,55 @@
 		
 		<div class="board" id="board">
 			<div class="card" id="card1">
-			  <h2 class="header">INVESTMENT BLOG</h2>
-			  <div class="fakeimg" style="height:200px;">Image</div>
-			  <p>Some text..</p>
+			  <div class="headdiv">
+				<div class="headline">
+					<h2 class="header">Uranium As An Investment</h2>
+				</div>
+				<div class="date">
+					<p>November 19th, 2018</p>
+				</div>
+			  </div>
+				<div id="imgdiv1">
+					<img src="ChristieLake.jpg">
+				</div>
+			  <div id="content1"> 
+				  <!-- <div id="video1">
+					 <iframe class="video" width="420" height="315" frameborder="0" src="https://www.youtube.com/embed/2ANI6oj8p2M"></iframe>
+				  </div> -->
+				  <div id="text1" class="textjustify">
+					  <p class="textp">
+						Pro's:	
+						<ul class="textp">
+							<li>Rising demand in developing countries (e.g. China and India)</li>
+							<li>Possible revival of nuclear energy sector in Japan</li>	
+							<li>Refurbishment of old plants in France, Britain and the United Stated</li>	
+							<li>Possible increase of demand for a carbon-free energy scenario</li><span id="dots">...</span><span id="more">	
+							<li>Available amounts of secondary supply (state inventories) nearly depleted</li>	
+							<li>Production prices of uranium above current market price =>
+								</br>&nbsp &nbsp &nbsp - Makes mining and production unprofitable
+								</br>&nbsp &nbsp &nbsp - Industry leaders (e.g. Cameco) want the price to go up
+								</br>&nbsp &nbsp &nbsp - Production cuts (e.g. closure of mines)</li>
+							<li>Stock share prices of most companies involved in the uranium and nuclear energy market at an all time low =>
+								</br>&nbsp &nbsp &nbsp Excellent risk/reward ratio</li>
+							<li>Nearly all of the urnanium in the U.S. is being imported 	
+								</br>&nbsp &nbsp &nbsp - About XX% is imported from Russia, Kazakhstan and Uzbekistan
+								</br>&nbsp &nbsp &nbsp - US-companies Energy Fuels and UR-Energy want the United States to ensure U.S. producers control 25 percent of the market (7% as of 2017)
+								</br>&nbsp &nbsp &nbsp - U.S. Department of Commerce initiated Section 232 investigation for uranium imports</li>
+							<li>Strategic metal (political relevance)</li>
+							<li>Innovation (e.g. Small Modular Reactor)</li>
+							<li>Nuclear energy advantegeous in areas with high population density (coastal China, Southern Asia, Japan) where there is not enough space for solar or wind energy plants</li>
+							<li>Constitutes a big part of energy production in the future energy policy of China</li>
+							<li>Suitable as baseload energy with constant power supply</li></span></p><button onclick="myFunction()" id="myBtn">Read more</button>
+					  </p>
+				  </div>
+				  <div id="download1"> 	
+					  <div class="factsheet">Download Fact Sheet</div>
+					  <a href="Uranium.pdf">
+						<img src="pdfdownloadbutton.png" alt="" width="auto" height="80">
+					  </a>
+				  </div>
+
+			  </div>
 			</div>
 		
 			<div class="card" id="card2">
@@ -47,27 +96,29 @@
 			</div>
 		</div>
 		
-		<!-- The Modal -->
-		<div id="myModalAbout" class="modal">
-		  <!-- The Close Button -->
-		  <span class="closeModal" onclick="closeModal()">&times;</span>	
-		  <h2 class="modalHeader">ABOUT</h2>
-		  <!-- Modal Content (The Image) -->
-		  <!-- <img class="modal-content" id="modalImg"> -->
-		  <!-- Modal Caption (Image Text) -->
-		  <div class="modalDescription">Coming soon..</div>
-		</div>	
-				
-		<!-- The Modal -->
-		<div id="myModalContact" class="modal">
-		  <!-- The Close Button -->
-		  <span class="closeModal" onclick="closeModal()">&times;</span>	
-		  <h2 class="modalHeader">CONTACT</h2>
-		  <!-- Modal Content (The Image) -->
-		  <!-- <img class="modal-content" id="modalImg"> -->
-		  <!-- Modal Caption (Image Text) -->
-		  <div class="modalDescription">BavaroInvestments@gmail.com</div>
-		</div>	
+		<div class="modalwrapper">
+			<!-- The Modal -->
+			<div id="myModalAbout" class="modal">
+			  <!-- The Close Button -->
+			  <span class="closeModal" onclick="closeModal()">&times;</span>	
+			  <h2 class="modalHeader">ABOUT</h2>
+			  <!-- Modal Content (The Image) -->
+			  <!-- <img class="modal-content" id="modalImg"> -->
+			  <!-- Modal Caption (Image Text) -->
+			  <div class="modalDescription">Coming soon..</div>
+			</div>	
+					
+			<!-- The Modal -->
+			<div id="myModalContact" class="modal">
+			  <!-- The Close Button -->
+			  <span class="closeModal" onclick="closeModal()">&times;</span>	
+			  <h2 class="modalHeader">CONTACT</h2>
+			  <!-- Modal Content (The Image) -->
+			  <!-- <img class="modal-content" id="modalImg"> -->
+			  <!-- Modal Caption (Image Text) -->
+			  <div class="modalDescription">BavaroInvestments@gmail.com</div>
+			</div>	
+		</div>
 		
 		<script src="myscripts.js"></script>
 	</body>
