@@ -4,7 +4,7 @@
 	cursor: pointer;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 	#myTopnav {
         display: none;
     }
@@ -338,7 +338,7 @@
 /*----MOBILE WEBSITE----*/
 /*----------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #mySidenav {
         display: none;
     }
@@ -354,14 +354,11 @@
 	#imgdiv1 {
 		display: none;
 	}
-	.modalwrapper {
-		display: none;
-	}
 	
 	body {
 		margin-top: 10px;
-		margin-right: 0px;
-		margin-left: 10px;
+		margin-right: 10px;
+		margin-left: 0px;
 		margin-bottom: 0px;
 		/*font-family: Lato;*/
 		/*font-family: Roboto;*/
@@ -397,7 +394,7 @@
 		overflow-x: hidden;
 		transition: 0.5s;
 		margin-top: 0px;
-		padding-top: 30px;
+		padding-top: 20px;
 		padding-left: 5px;
 	} 
 
@@ -414,7 +411,7 @@
 		transition: 0.5s;
 		margin-top: 0px;
 		text-align:center;
-		padding-top: 20px;
+		padding-top: 10px;
 	} 
 	
 	.TopNavFolio {
@@ -430,7 +427,7 @@
 		transition: 0.5s;
 		margin-top: 0px;
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 10px;
 		overflow-y: hidden;
 		padding-left: 1vw;
 	}
@@ -485,5 +482,157 @@
 	#dropDown {
 		display: none;
 	}
+	
+	.dropdown-content {
+		padding-right: 15px;
+	}
+	
+	#myBtn {
+		background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 12px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	
+	#card1 {	
+		/*background-color: #001f3f;*/
+		background-color: rgba(255,152,0,0.2);
+		color: black;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#card2 {	
+		background-color: #0074D9;
+		color: white;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	#card3 {	
+		background-color: #7FDBFF;
+		color: white;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#more {display: none;}
+	
+	#download1 {
+		width: 125px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.factsheet {
+		font-size:16px;
+		width: 125px;
+		display:block; 
+	}
+	
+	/*----------------------*/
+	/*------THE  MODAL------*/
+	/*----------------------*/
+
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		z-index: 50; /* Sit on top */
+		padding-top: 0px; /* Location of the box */
+		/*left: 40vh;	
+		top: 4vw;*/
+		width: 65vw; 
+		height: 75vh;
+		overflow-y: hidden;
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		position: fixed;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	/* Modal Content (Image) */
+	.modal-content {
+		margin: auto;
+		margin-top: 50px;
+		display: block;
+		width: 65vw;	
+	}
+
+	/*.modalHeader {
+		/*display: none; /* Hidden by default 
+		position: fixed;
+	}*/
+
+	/* Caption of Modal Image (Image Text) - Same Width as the Image */
+	.modalDescription {
+		margin: auto;
+		display: block;
+		width: 60vh;
+		height: auto;
+		/*max-width: 700px;*/
+		text-align: center;
+		color: white;
+		padding: 10px 10px;
+		font-family: Fira Sans;
+		margin-bottom: 50px;
+	}
+
+	/* Add Animation - Zoom in the Modal */
+	.modal-content .modalDescription { 
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+
+	@keyframes zoom {
+		from {transform:scale(0)} 
+		to {transform:scale(1)}
+	}
+
+	/*----------------------*/
+	/*--MODAL CLOSE BOTTON--*/
+	/*----------------------*/
+
+	.modal .closeModal {
+		position: relative;
+		left: 15px;
+		color: #818181;
+		font-size: 36px;
+		transition: 0.3s;
+		font-family: Fira Sans;
+	}
+
+	.modal .closeModal:hover, .closeModal:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.modal .social-media{
+		display: flex;
+		justify-content: center;
+	}
+
+	.modalHeader {
+		color: white;
+		text-align: center;
+		font-family: Fira Sans;
+	}
+	
+	
 }
 

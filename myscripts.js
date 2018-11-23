@@ -1,17 +1,3 @@
-/* function openDropDown() {
-	document.getElementById("TopNavFolio").style.top = "120px";
-	document.getElementById("board").style.marginTop = "250px";
-	document.getElementById("board").style.transition = "0.3s";
-	document.getElementById("dropDown").style.display = "block";
-}
-
-function closeDropDown() {
-	document.getElementById("TopNavFolio").style.top = "120px";
-	document.getElementById("board").style.marginTop = "250px";
-	document.getElementById("board").style.transition = "0.3s";
-	document.getElementById("dropDown").style.display = "none";
-} */
-
 function openDropDown() {
 	var a = document.getElementById("dropDown");
 	var b = document.getElementById("TopNavFolio");
@@ -31,8 +17,8 @@ function openDropDown() {
 function openTopNav() {
 	document.getElementById("closeBtnDivTopNav").style.top = "-20px";
 	document.getElementById("TopNavLinks").style.top = "0px";
-	document.getElementById("TopNavFolio").style.top = "120px";
-	document.getElementById("board").style.marginTop = "210px";
+	document.getElementById("TopNavFolio").style.top = "110px";
+	document.getElementById("board").style.marginTop = "190px";
 	document.getElementById("board").style.transition = "0.3s";
 	document.getElementById("menubtnTop").style.display = "none";
 	document.getElementById("dropDown").style.display = "none";
