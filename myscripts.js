@@ -1,17 +1,68 @@
+/* function openDropDown() {
+	document.getElementById("TopNavFolio").style.top = "120px";
+	document.getElementById("board").style.marginTop = "250px";
+	document.getElementById("board").style.transition = "0.3s";
+	document.getElementById("dropDown").style.display = "block";
+}
+
+function closeDropDown() {
+	document.getElementById("TopNavFolio").style.top = "120px";
+	document.getElementById("board").style.marginTop = "250px";
+	document.getElementById("board").style.transition = "0.3s";
+	document.getElementById("dropDown").style.display = "none";
+} */
+
+function openDropDown() {
+	var a = document.getElementById("dropDown");
+	var b = document.getElementById("TopNavFolio");
+    if (a.style.display === "none") {
+        a.style.display = "block";
+		a.style.top = "220px";
+		b.style.height = "150px";
+/* 		document.getElementById("board").style.marginTop = "350px";*/
+    } else {
+        a.style.display = "none";
+		a.style.top = "-500px";
+		b.style.height = "50px";
+		c.sytle.top = "250px";
+    }
+}
+
+function openTopNav() {
+	document.getElementById("closeBtnDivTopNav").style.top = "-20px";
+	document.getElementById("TopNavLinks").style.top = "0px";
+	document.getElementById("TopNavFolio").style.top = "120px";
+	document.getElementById("board").style.marginTop = "210px";
+	document.getElementById("board").style.transition = "0.3s";
+	document.getElementById("menubtnTop").style.display = "none";
+	document.getElementById("dropDown").style.display = "none";
+}
+
+function closeTopNav() {
+	document.getElementById("closeBtnDivTopNav").style.top = "-130px";
+	document.getElementById("TopNavLinks").style.top = "-120px";
+	document.getElementById("TopNavFolio").style.top = "-120px";
+	document.getElementById("board").style.marginTop = "0px";
+	document.getElementById("board").style.transition = "0.3s";
+	document.getElementById("menubtnTop").style.display = "block";
+	document.getElementById("dropDown").style.display = "none";
+	document.getElementById("TopNavFolio").style.height = "50px";
+}
+
 function openNav() {
-    document.getElementById("mySidenav").style.left = "0px";
+	document.getElementById("mySidenav").style.left = "0px";
 	document.getElementById("board").style.marginLeft = "200px";
 	document.getElementById("board").style.transition = "0.3s";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.left = "-200px";
+	document.getElementById("mySidenav").style.left = "-200px";
 	document.getElementById("board").style.marginLeft = "50px";
 	document.getElementById("board").style.transition = "0.3s";
 }
 
 function openNavR() {
-    document.getElementById("mySidenavR").style.right = "0px";
+	document.getElementById("mySidenavR").style.right = "0px";
 	document.getElementById("board").style.marginRight = "190px";
 	document.getElementById("board").style.transition = "0.3s";
 }
@@ -21,6 +72,7 @@ function closeNavR() {
 	document.getElementById("board").style.marginRight = "40px";
 	document.getElementById("board").style.transition = "0.3s";
 }
+
 
 
 
